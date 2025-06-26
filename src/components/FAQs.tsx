@@ -1,4 +1,4 @@
-import { ChevronDown, ChevronUp } from "lucide-react";
+// import { ChevronDown, ChevronUp } from "lucide-react";
 
 export const FAQs = () => {
   const faqs = [
@@ -59,7 +59,7 @@ export const FAQs = () => {
                 {/* {openIndex === index ? ( */}
                 {/* <ChevronUp className="text-pink-600" /> */}
                 {/* ) : ( */}
-                <ChevronDown className="text-pink-600" />
+                {/* <ChevronDown className="text-pink-600" /> */}
                 {/* )} */}
               </button>
               {/* {openIndex === index && ( */}
