@@ -1,7 +1,7 @@
 import { useState } from "react";
-import PocketBase from "pocketbase";
+import { supabase } from '../lib/supabase'
 
-const pb = new PocketBase("http://127.0.0.1:8090");
+
 
 export const Hero = () => {
   const [email, setEmail] = useState("");
@@ -13,13 +13,15 @@ export const Hero = () => {
     if (!email) return;
 
     try {
-      await pb.collection("waitlist").create({ email });
+      const { error } = await supabase.from("waitlist").insert([{ email }])
+      if ( error ) throw error;
       console.log("Email submitted:", email);
-      setSubmitted(true);
-      setEmail("");
+      setSubmitted(true)
+      setEmail("")
+      
     } catch (error) {
-      console.error("Failed to submit email:", error);
-      alert("Something went wrong. Please try again.");
+     console.error("Failed to submit email:", error)
+     alert("Something went wrong. Please try again.")
     }
   };
 
