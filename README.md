@@ -3,7 +3,7 @@
 A modern product launch website built with **React**, **Tailwind CSS**, and **TypeScript** to promote the Periodly app — a smart, clean solution for cycle tracking.
 
 
-Live URL: [https://periodly.netlify.app/]()
+Live URL: https://periodly.netlify.app/
 
 ## 📌 Table of Contents
 
