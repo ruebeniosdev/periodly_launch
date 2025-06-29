@@ -32,17 +32,17 @@ export const Navbar = () => {
       </ul> */}
 
       {/* Download Button Desktop */}
-      <button className="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
+      {/* <button className="bg-white text-gray-600 border border-gray-300 md:inline hidden text-sm hover:bg-gray-50 active:scale-95 transition-all w-40 h-11 rounded-full">
         Download
-      </button>
+      </button> */}
 
       {/* Mobile Menu Button */}
-      <button
+      {/* <button
         onClick={toggleMenu}
         className="md:hidden inline-block active:scale-90 transition"
       >
         {openMenu ? <X /> : <AlignRight />}
-      </button>
+      </button> */}
 
       {/* Mobile Menu */}
       {/* {openMenu && (
