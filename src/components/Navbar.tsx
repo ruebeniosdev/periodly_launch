@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Logo from "../assets/logo.png";
-import { AlignRight, X } from "lucide-react";
+// import { AlignRight, X } from "lucide-react";
 // import { Link } from "react-router-dom";
 
 export const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  // const [openMenu, setOpenMenu] = useState(false);
 
-  const toggleMenu = () => {
-    setOpenMenu(!openMenu);
-  };
+  // const toggleMenu = () => {
+  //   setOpenMenu(!openMenu);
+  // };
 
   // const navLinks = ["Features", "Services", "About", "FAQs"];
 
